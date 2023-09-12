@@ -1,13 +1,13 @@
 import { oneProject } from  "../data"
 
-import getProjects from '../api/get-projects'  
+import getProject from '../api/get-projects'  
 
 import { useParams } from "react-router-dom"
 
-import useProjects from "../hooks/useProjects"
+import useProject from "../hooks/useproject"
 
 function ProjectPage() {
-    const { project, isLoading, error } = useProjects(id)
+    const { project, isLoading, error } = useProject(id)
     const { id } = useParams()
 
     if (isLoading) {
@@ -21,7 +21,7 @@ function ProjectPage() {
         <div>
             <h2>{project.title}</h2>
             <h3>Created at: {project.date_created}</h3>
-            <h3>{`Status: ${oneProject.is_open}`}</h3>
+            <h3>{`Status: ${project.is_open}`}</h3>
             <h3>Pledges:</h3>
             <ul>
                 {project.pledges.map((pledgeData, key) => {
