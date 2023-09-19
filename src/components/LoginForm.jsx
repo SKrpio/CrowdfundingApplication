@@ -22,12 +22,13 @@ function LoginForm() {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        console.log(credentials)
+        console.log( "credentials", credentials)
         if (credentials.username && credentials.password) {
             postLogin(
                 credentials.username,
                 credentials.password
             ).then((response) => {
+                console.log ("response", response.token)
                 window.localStorage.setItem("token", response.token)
                 navigate("/")
             } )
@@ -55,7 +56,7 @@ function LoginForm() {
                     onChange={handleChange}
                 />
             </div>
-            <button type="submit">
+            <button type="submit" onClick={handleSubmit}>
                 Login
             </button>
         </form>

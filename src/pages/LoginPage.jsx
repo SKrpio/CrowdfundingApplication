@@ -1,3 +1,4 @@
+import "../pages/CSS/LoginPage.css";
 import LoginForm from "../components/LoginForm";
 
 function LoginPage() {
