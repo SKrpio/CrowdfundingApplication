@@ -5,7 +5,7 @@ import getProject from "../api/get-projects";
 function useProject(projectId) {
     const [project, setProject] = useState([])
     const [isLoading, setIsLoading] = useState(false)
-    const [error, setError] = useState()
+    const [error, setError] = useState();
 
     useEffect(() => {
         getProject(projectId)

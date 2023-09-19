@@ -1,11 +1,11 @@
-async function getProjects() {
+async function getProjects(projectId) {
 
-    const url = `${import.meta.env.VITE_API_URL}/projects/`;
+    const url = `${import.meta.env.VITE_API_URL}/projects/${projectId}`;
 
     const response = await fetch(url, { method: "GET" })
 
     if (!response.ok) {
-        const fallbackError = `Error fetching project with the id: `
+        const fallbackError = `Error fetching project with the id: ${projectId}`
 
         const data = await response.json().catch(() => {
             throw new Error(fallbackError)

@@ -1,7 +1,7 @@
 import "../pages/CSS/HomePage.css";
 import useProjects from "../hooks/useProjects";
 import ProjectCard from "../components/ProjectCard";
-
+import "./HomePage.css";
 
 function HomePage() {
 

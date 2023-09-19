@@ -1,4 +1,3 @@
-import { oneProject } from  "../data"
 
 import getProject from '../api/get-projects'  
 
