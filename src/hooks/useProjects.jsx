@@ -3,13 +3,13 @@ import { useEffect, useState } from "react";
 import getProjects from "../api/get-projects";
 
 
-function useProjects() {
+function useProjects(projectId) {
     const [projects, setProjects] = useState([])
-    const [isLoading, setIsLoading] = useState(false)
+    const [isLoading, setIsLoading] = useState(true)
     const [error, setError] = useState()
 
     useEffect(() => {
-        getProjects()
+        getProjects(projectId)
             .then((projects) => {
             setProjects(projects)
             setIsLoading(false)
@@ -18,7 +18,7 @@ function useProjects() {
             setError(error)
             setIsLoading(false)
         })
-}, [])
+}, [projectId])
 return { projects, isLoading, error } 
 }
 

@@ -5,7 +5,7 @@ import getProjects from "../api/get-projects";
 
 function HomePage() {
 
-    const { projects, isLoading, error } = getProjects();
+    const { projects, isLoading, error } = useProjects();
     console.log("projects", projects)
 
     return (
