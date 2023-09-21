@@ -1,7 +1,7 @@
 import "../pages/CSS/HomePage.css";
 import useProjects from "../hooks/useProjects";
 import ProjectCard from "../components/ProjectCard";
-
+import getProjects from "../api/get-projects";
 
 function HomePage() {
 
@@ -11,9 +11,11 @@ function HomePage() {
     return (
         <div id="project-list">
             {
-                projects.map((project, index, key, projectData) => {
-                    return <ProjectCard projectData={projectData} index={index} key={key} />
-            
+                projects.map((project, index, key) => {
+                    return (
+                        console.log("projects within map", project),
+                        <ProjectCard project={project} index={index} key={key} />
+                    )
                 })
             }
         </div>
