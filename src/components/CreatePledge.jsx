@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom'
-import postPledge from '../../api/postPledge'
+import postPledge from '../api/post-pledge'
 
 function CreatePledge(props) {
   const navigate = useNavigate()
