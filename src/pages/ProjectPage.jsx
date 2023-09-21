@@ -13,6 +13,7 @@ function ProjectPage() {
     if (isLoading) {
         return (<p>loading...</p>)
     }
+    
     if (error) {
         return (<p>{error.message}</p>)
     }
