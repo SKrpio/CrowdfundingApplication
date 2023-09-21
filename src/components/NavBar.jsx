@@ -23,6 +23,7 @@ function NavBar() {
                             <Link to="/login">Login</Link>
                     )}
                 <li><Link to="/about">About Us</Link></li>
+                {/* <li><Link to="/projects/:id">Project</Link></li> */}
                 <li><Link to="/projects">Projects</Link></li>
                 <li><Link to="/pledges">Pledge</Link></li>    
                 </ul>
