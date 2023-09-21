@@ -3,7 +3,7 @@ import "../pages/CSS/ProjectCard.css"
 
 function ProjectCard(props) {
     const { project } = props;
-    const projectLink = `project/${project.id}` 
+    const projectLink = `projects/${project.id}`;
     
     return (
         <div className="project-card">
