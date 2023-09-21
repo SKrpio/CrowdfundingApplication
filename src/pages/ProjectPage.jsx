@@ -6,8 +6,11 @@ import { useParams } from "react-router-dom"
 import useProject from "../hooks/useproject"
 
 function ProjectPage() {
-    const { project, isLoading, error } = useProject(id)
     const { id } = useParams()
+    const { project, isLoading, error } = useProject(id)
+
+
+    console.log(isLoading)
 
     if (isLoading) {
         return (<p>loading...</p>)
