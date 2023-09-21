@@ -5,16 +5,16 @@ import getProjects from "../api/get-projects";
 
 function HomePage() {
 
-    const { projects, isLoading, error } = useProjects();
+    const { projects } = useProjects();
     console.log("projects", projects)
 
     return (
         <div id="project-list">
             {
-                projects.map((project, index) => {
+                projects.map((project, index, key) => {
                     return (
                         console.log("projects within map", project),
-                        <ProjectCard project={project} key={index} />
+                        <ProjectCard project={project} index={index} key={key} />
                     )
                 })
             }
