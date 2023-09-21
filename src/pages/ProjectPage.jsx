@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom"
 
 import useProject from "../hooks/useproject"
 
+import CreatePledge from '../components/CreatePledge'
+
 function ProjectPage() {
     const { id } = useParams()
     const { project, isLoading, error } = useProject(id)
@@ -24,7 +26,7 @@ function ProjectPage() {
             <h3>Created at: {project.date_created}</h3>
             <h3>{`Status: ${project.is_open}`}</h3>
             <h3>Pledges:</h3>
-            <ul>
+            {/* <ul>
                 {project.pledges.map((pledgeData, key) => {
                     return (
                         <li key={key}>
@@ -32,7 +34,7 @@ function ProjectPage() {
                         </li>
                     )
                 })}
-            </ul>
+            </ul> */}
          </div>
     )
 }

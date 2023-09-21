@@ -12,7 +12,7 @@ async function postPledge(amount,comment,anonymous,project) {
           "amount": amount,
           "comment": comment,
           "anonymous": anonymous,
-           "project": project,
+            "project": project,
         }),
     });
   
