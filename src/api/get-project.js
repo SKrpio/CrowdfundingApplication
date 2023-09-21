@@ -1,6 +1,6 @@
 async function getProject(projectId) {
 
-    const url = `${import.meta.env.VITE_API_URL}/project/${projectId}`;
+    const url = `${import.meta.env.VITE_API_URL}/projects/${projectId}`;
 
     const response = await fetch(url, { method: "GET" });
 
