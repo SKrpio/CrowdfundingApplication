@@ -13,6 +13,7 @@ function HomePage() {
             {
                 projects.map((project, index) => {
                     return (
+                        console.log("projects within map", project),
                         <ProjectCard project={project} key={index} />
                     )
                 })

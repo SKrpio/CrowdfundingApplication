@@ -1,5 +1,7 @@
 async function postLogin(username, password) {
+    
     const url = `${import.meta.env.VITE_API_URL}/api-token-auth/`;
+
     const response = await fetch(url, {
         method: "POST",
         headers: {

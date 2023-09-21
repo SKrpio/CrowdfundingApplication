@@ -9,8 +9,8 @@ function useProject(projectId) {
 
     useEffect(() => {
         getProject(projectId)
-            .then((projects) => {
-            setProject(projects)
+            .then((project) => {
+            setProject(project)
             setIsLoading(false)
         })
         .catch((error) => {

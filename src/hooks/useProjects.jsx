@@ -3,22 +3,22 @@ import { useEffect, useState } from "react";
 import getProjects from "../api/get-projects";
 
 
-function useProjects(projectId) {
+function useProjects() {
     const [projects, setProjects] = useState([])
     const [isLoading, setIsLoading] = useState(true)
     const [error, setError] = useState()
 
     useEffect(() => {
-        getProjects(projectId)
-            .then((projects) => {
-            setProjects(projects)
+        getProjects()
+            .then((project) => {
+            setProjects(project)
             setIsLoading(false)
         })
         .catch((error) => {
             setError(error)
             setIsLoading(false)
         })
-}, [projectId])
+}, [])
 return { projects, isLoading, error } 
 }
 
