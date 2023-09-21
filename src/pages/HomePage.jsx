@@ -11,11 +11,8 @@ function HomePage() {
     return (
         <div id="project-list">
             {
-                projects.map((project, index, key) => {
-                    return (
-                        console.log("projects within map", project),
-                        <ProjectCard project={project} index={index} key={key} />
-                    )
+                projects.map((project, index) => {
+                    return <ProjectCard project={project} index={index} />
                 })
             }
         </div>
