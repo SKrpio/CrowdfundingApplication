@@ -10,15 +10,15 @@ function useProject(projectId) {
     useEffect(() => {
         getProject(projectId)
             .then((project) => {
-            setProject(project)
-            setIsLoading(false)
-        })
-        .catch((error) => {
-            setError(error)
-            setIsLoading(false)
-        })
-}, [projectId])
-return { project, isLoading, error } 
+                setProject(project)
+                setIsLoading(false)
+            })
+            .catch((error) => {
+                setError(error)
+                setIsLoading(false)
+            })
+    }, [projectId]);
+    return { project, isLoading, error };
 }
 
 export default useProject
