@@ -13,7 +13,7 @@ function ProjectPage() {
     if (isLoading) {
         return (<p>loading...</p>)
     }
-    
+
     if (error) {
         return (<p>{error.message}</p>)
     }
@@ -24,7 +24,7 @@ function ProjectPage() {
             <h3>Created at: {project.date_created}</h3>
             <h3>{`Status: ${project.is_open}`}</h3>
             <h3>Pledges:</h3>
-            <ul>
+            {/* <ul>
                 {project.pledges.map((pledgeData, key) => {
                     return (
                         <li key={key}>
@@ -32,7 +32,7 @@ function ProjectPage() {
                         </li>
                     )
                 })}
-            </ul>
+            </ul> */}
          </div>
     )
 }
