@@ -24,6 +24,7 @@ function NavBar() {
                     )}
                 <li><Link to="/about">About Us</Link></li>
                 <li><Link to="/projects">Projects</Link></li>
+                <li><Link to="/pledges">Pledge</Link></li>    
                 </ul>
             </nav>
             <Outlet />
