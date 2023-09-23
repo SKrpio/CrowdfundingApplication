@@ -1,11 +1,14 @@
-background {
-    background: #6ea3f6
+body {
+    background-color : #6ea3f6
 }
 
+html {
+    background-color: #6ea3f6;
+}
 
-img {
+/* img {
     background-image: url(src\api\images\chrome_mY1tYR0SIu.png);
     background-repeat: no-repeat;
     width: 777px;
     height: 188px;
-    }
+    } */
