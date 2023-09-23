@@ -4,7 +4,7 @@ export const allProjects = [
         title: "Project One",
         description: "The first project.",
         goal: 150,
-        image: "https://via.placeholder.com/300.jpg",
+        image: "https://thestreetsbarber.com/wp-content/uploads/2019/02/36967882_1596844567110156_6076060203239866368_n.jpg",
         is_open: false,
         date_created: "2020-03-20T14:22:23.382748Z",
         owner: 1,

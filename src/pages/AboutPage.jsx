@@ -4,7 +4,10 @@ import "../pages/CSS/AboutPage.css";
 
 
 function AboutPage() {
+    
     return <img src={logo} />
+    
+
 }
 export default AboutPage;
 
