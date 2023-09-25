@@ -1,17 +1,20 @@
 ## Helping Hand by Sarah Kernahan
-She Codes crowdfunding project - DRF Backend.
+She Codes crowdfunding project - ReactJS Frontend & DRF Backend.
 
 ## About
 Helping Hand allows those experiencing housing difficulties to receive financial support relevant to their needs. Helping Hand provides a safe and secure platform to those who need it most whilst ensuring 100% of the funds get to the right place. Helpers can make one-time or recurring payments, based off the needs outlined on pledgee's profiles. These contributions are typically small, affordable amounts, making it easy for anyone to become a Helper.
 
+## HomePage
+Screenshot of the Home Page
+(src\images\Home.png)
 
 ## Features
-* [X] Functional Profiles
-* [X] Ability for Helpers to create a new pledge
-* [X] Ability to delete and update pledges
+* [] Functional Profiles
+* [] Ability for Helpers to create a new pledge
+* [] Ability to delete and update pledges
 * [] 'About Us' page
-* [X] Token Authentication
-* [X] Responsive Design
+* [x] Token Authentication
+* [] Responsive Design
 * [X] Appropriate Status Codes
 
 ### Stretch Goals
@@ -57,7 +60,7 @@ Image of Wireframe design which details 6 site pages including the landing page,
 'Unica One' for body text.
 
 ## Submission Documentation
-Deployed Project: [Helping Hand](https://fly.io/apps/helpinghand)
+Deployed Project: [Helping Hand](https://fantastic-sunshine-0eaf90.netlify.app/)
 
 ### How To Run
 Once repository has been cloned and opened on your device, open a terminal.
@@ -74,7 +77,7 @@ N/A
 
 ### How To Register a New User
 ### Register a new user:
-1. Open Insomnia or similar, select 'HTTP Request' and POST method. Endpoint = http://127.0.0.1:8000/users/
+1. Open Insomnia or similar, select 'HTTP Request' and POST method. Endpoint = https://helpinghand.fly.dev/users/
 2. Select JSON and enter body: 
 {
 	"username":"YOURDETAILSHERE",
@@ -84,7 +87,7 @@ N/A
 3. Send 
 
 ### Create a new project:
-1. Open Insomnia or similar, select 'HTTP Request' and POST method. Endpoint = http://127.0.0.1:8000/projects/
+1. Open Insomnia or similar, select 'HTTP Request' and POST method. Endpoint = https://helpinghand.fly.dev/projects/
 2. Select JSON and enter body: 
 {
 	"title": "YOURDETAILSHERE",
