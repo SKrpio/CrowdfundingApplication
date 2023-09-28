@@ -46,7 +46,7 @@ function CreatePledge(props) {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="amount">Amount:  </label>
+        <label htmlFor="amount">Donation:  </label>
         <input 
           type="text" 
           id="amount" 
