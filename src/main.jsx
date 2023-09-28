@@ -11,6 +11,7 @@ import Pledge from "./pages/Pledge.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import "./main.css";
 
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
         ]
     }
 ]);
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
