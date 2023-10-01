@@ -1,4 +1,10 @@
+
+
 .pledge-container {
+    display: flex;
+    flex-direction: column; /* To stack items vertically */
+    justify-content: center; /* To center items vertically */
+    align-items: center; /* To center items horizontally */
     background-color: #404756;
     border-radius: 5px;
     padding: 20px;
