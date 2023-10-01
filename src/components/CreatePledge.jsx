@@ -64,7 +64,7 @@ function CreatePledge(props) {
         />
       </div>
       <div>
-        <label htmlFor='anonymous'>Anonymous Pledge</label>
+        <label htmlFor='anonymous'>Remain Anonymous?  </label>
         <input
           type='checkbox'
           id='anonymous'

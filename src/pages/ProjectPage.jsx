@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom"
 
 import useProject from "../hooks/useproject"
 
-import CreatePledge from '../components/CreatePledge'
+import CreatePledge from '../components/CreatePledge.jsx'
 
 function ProjectPage() {
     const { id } = useParams()
@@ -26,17 +26,20 @@ function ProjectPage() {
             <h3>Created at: {project.date_created}</h3>
             <h3>{`Status: ${project.is_open}`}</h3>
             <h3>Pledges:</h3>
-            {/* <ul>
-                {project.pledges.map((pledgeData, key) => {
-                    return (
+            <ul>
+                {project.pledges && Array.isArray(project.pledges) ? (
+                    project.pledges.map((pledgeData, key) => (
                         <li key={key}>
                             {pledgeData.amount} from {pledgeData.supporter}
                         </li>
-                    )
-                })}
-            </ul> */}
-         </div>
+                    ))
+                ) : (
+                    <li>No pledges available</li>
+                )}
+            </ul>
+        </div>
     )
+    
 }
 
 export default ProjectPage
