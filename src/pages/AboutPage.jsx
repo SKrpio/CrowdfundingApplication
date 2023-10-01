@@ -7,8 +7,8 @@ function AboutPage() {
         <div className="about-container">
             <img src={logo} alt="Company Logo" />
             <h1>About Us</h1>
-            <p>Helping Hand allows those experiencing homelessness to receive financial support relevant to their needs. Helping Hand provides a safe and secure platform to those who need it most whilst ensuring 100% of the funds get to the right place.</p>
-            <p>Helpers can make one-time or recurring payments, based off the needs outlined on pledgee's profiles. These contributions are typically small, affordable amounts, making it easy for anyone to become a Helper.</p>
+            <p>HELPING HAND ALLOWS THOSE EXPERIENCING HOMELESSNESS TO RECEIVE FINANCIAL SUPPORT RELEVANT TO THEIR NEEDS. HELPING HAND PROVIDES A SAFE AND SECURE PLATFORM TO THOSE WHO NEED IT MOST WHILST ENSURING 100% OF THE FUNDS GET TO THE RIGHT PLACE.</p>
+            <p>HELPERS CAN MAKE ONE-TIME OR RECURRING PAYMENTS, BASED OFF THE NEEDS OUTLINED ON PLEDGEE'S PROFILES. THESE CONTRIBUTIONS ARE TYPICALLY SMALL, AFFORDABLE AMOUNTS, MAKING IT EASY FOR ANYONE TO BECOME A HELPER.</p>
         </div>
     );
 }

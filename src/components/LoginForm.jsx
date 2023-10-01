@@ -59,7 +59,7 @@ function LoginForm() {
                 <input
                     type="password"
                     id="password"
-                    placeholder="Password"
+                    placeholder="Enter Password"
                     onChange={handleChange}
                 />
             </div>
