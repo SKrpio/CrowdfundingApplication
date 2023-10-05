@@ -1,7 +1,25 @@
 #background {
-    background-color: #6ea3f6
+    background-color: #6ea3f6;
 }
 
+/* Style for the wings */
+.wing {
+    position: absolute;
+    /* top: 10; */
+    height: 10%; /* Adjust this value to fit your design */
+}
+
+.left-wing {
+    left: 0;
+    top: 10;
+    height: 10%; 
+}
+
+.right-wing {
+    right: 0;
+    top: 10;
+    height: 10%; 
+}
 
 .login-container {
     display: flex;
