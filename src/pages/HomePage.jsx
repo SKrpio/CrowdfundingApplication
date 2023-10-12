@@ -7,7 +7,6 @@ import logo from '../images/logo.png';
 function HomePage() {
 
     const { projects } = useProjects();
-    console.log("projects", projects)
     return (
         <>
             <div className="top-image"> 

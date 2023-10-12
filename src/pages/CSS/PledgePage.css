@@ -15,14 +15,14 @@
 }
 
 .left-wing {
-    left: 25%; /* Adjust the left value to move the left wing closer to the center */
+    left: 24%; /* Adjust the left value to move the left wing closer to the center */
     top: 10%;
     height: 10%;
     /* right: 10; Remove this line */
 }
 
 .right-wing {
-    right: 25%; /* Adjust the right value to move the right wing closer to the center */
+    right: 24%; /* Adjust the right value to move the right wing closer to the center */
     top: 10%;
     height: 10%;
 }

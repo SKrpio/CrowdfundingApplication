@@ -11,10 +11,10 @@ Screenshot of the Home Page
 ## Features
 * [] Functional Profiles
 * [] Ability for Helpers to create a new pledge
-* [] Ability to delete and update pledges
-* [] 'About Us' page
+* [x] Ability to delete and update pledges
+* [x] 'About Us' page
 * [x] Token Authentication
-* [] Responsive Design
+* [x] Responsive Design
 * [X] Appropriate Status Codes
 
 ### Stretch Goals
