@@ -4,21 +4,27 @@
 
 .wing {
     position: absolute;
-    height: 10%; /* Adjust this value to fit your design */
+    height: 10%; 
 }
 
 .left-wing {
-    left: 25%; /* Adjust the left value to move the left wing closer to the center */
+    left: 15%; /* Adjust the left value to move the left wing closer to the center */
     top: 10%;
     height: 10%;
-    /* right: 10; Remove this line */
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+    
 }
 
 .right-wing {
-    right: 25%; /* Adjust the right value to move the right wing closer to the center */
+    right: 15%; /* Adjust the right value to move the right wing closer to the center */
     top: 10%;
     height: 10%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
 }
+
+
 
 .login-container {
     display: flex;
