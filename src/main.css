@@ -11,6 +11,7 @@ html {
   
 
 .nav-menu {
+    justify-content: center;
     list-style: none; /* Remove default list styling */
     padding: 10;
     margin: 10;

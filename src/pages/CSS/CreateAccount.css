@@ -1,0 +1,32 @@
+#background {
+    background-color: #6ea3f6;
+}
+
+.wing {
+    position: absolute;
+    height: 10%; /* Adjust this value to fit your design */
+}
+
+.left-wing {
+    left: 25%; /* Adjust the left value to move the left wing closer to the center */
+    top: 10%;
+    height: 10%;
+    /* right: 10; Remove this line */
+}
+
+.right-wing {
+    right: 25%; /* Adjust the right value to move the right wing closer to the center */
+    top: 10%;
+    height: 10%;
+}
+
+.create-account-form {
+    display: flex;
+    flex-direction: column; /* To stack items vertically */
+    justify-content: center; /* To center items vertically */
+    align-items: center; /* To center items horizontally */
+    background-color: #404756;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}

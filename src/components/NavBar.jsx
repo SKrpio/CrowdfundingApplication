@@ -14,7 +14,7 @@ function NavBar() {
     return (
         <div>
             <nav>
-                <ul className="nav-menu"> {/* Add a class for styling */}
+                <ul class="nav-menu"> 
                     <li><Link to="/">Home</Link></li>
                     {auth.token ? (
                         <Link to="/" onClick={handleLogout}>
@@ -26,6 +26,7 @@ function NavBar() {
                     <li><Link to="/about">About Us</Link></li>
                     <li><Link to="/projects">Projects</Link></li>
                     <li><Link to="/pledges">Pledge</Link></li>
+                    <li><Link to="/account">Create Account</Link></li>
                 </ul>
             </nav>
             <Outlet />

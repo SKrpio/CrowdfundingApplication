@@ -9,6 +9,9 @@ import LoginPage from "./pages/LoginPage.jsx";
 import { AuthProvider } from "./components/AuthProvider.jsx"
 import Pledge from "./pages/Pledge.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
+// import CreateAccount from "./pages/CreateAccount.jsx";
+
+
 import "./main.css";
 
 
@@ -23,6 +26,7 @@ const router = createBrowserRouter([
             { path: "/projects", element: <ProjectPage /> },
             { path: "/pledges", element: <Pledge /> },
             { path: "/about", element: <AboutPage /> },
+            // { path: "/account", element: <CreateAccount /> },
         ]
     }
 ]);
