@@ -24,9 +24,9 @@ function NavBar() {
                         <li><Link to="/login">Login</Link></li>
                     )}
                     <li><Link to="/about">About Us</Link></li>
-                    <li><Link to="/projects">Projects</Link></li>
+                    {/* <li><Link to="/projects">Projects</Link></li> */}
                     <li><Link to="/pledges">Pledge</Link></li>
-                    <li><Link to="/account">Create Account</Link></li>
+                    {/* <li><Link to="/account">Create Account</Link></li> */}
                 </ul>
             </nav>
             <Outlet />

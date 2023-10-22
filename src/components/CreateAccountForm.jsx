@@ -3,111 +3,63 @@ import { useHistory } from 'react-router-dom';
 
 
 function CreateAccountForm() {
-    // use state hooks to store the input values
-    const [name, setName] = useState('');
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
-    const [email, setEmail] = useState('');
 
-    // use history hook to navigate to /adminhome after creating account
-    const history = useHistory();
+    const navigate = useNavigate()
+    const [credentials, setCredentials] = useState({
+        username: "",
+        password: "",
+    })
 
-    // handle the change of each input field
-    const handleNameChange = (e) => {
-        setName(e.target.value);
-    };
+    const handleChange = (event) => {
+        const { id, value } = event.target;
+        setCredentials((prevCredentials) => ({
+            ...prevCredentials,
+            [id]: value,
+        }))
+    }
 
-    const handleUsernameChange = (e) => {
-        setUsername(e.target.value);
-    };
-
-    const handlePasswordChange = (e) => {
-        setPassword(e.target.value);
-    };
-
-    const handleEmailChange = (e) => {
-        setEmail(e.target.value);
-    };
-
-    // handle the submit of the form
-    const handleSubmit = (e) => {
-        e.preventDefault(); // prevent the default behavior of form submit
-        // create a new admin user object with the input values
-        const newUser = {
-            name: name,
-            username: username,
-            password: password,
-            email: email,
-        };
-        // send a post request to the server with the new user object
-        fetch('/api/create-admin', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(newUser),
-        })
-            .then((response) => response.json())
-            .then((data) => {
-                // if the server returns a success message, redirect to /adminhome
-                if (data.message === 'success') {
-                    history.push('/adminhome');
-                } else {
-                    // otherwise, display an error message
-                    alert(data.message);
-                }
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        console.log("credentials", credentials)
+        if (credentials.username && credentials.password) {
+            postLogin(
+                credentials.username,
+                credentials.password
+            ).then((response) => {
+                console.log("response", response.token)
+                window.localStorage.setItem("token", response.token)
+                setAuth({
+                    token: response.token,
+                })
+                navigate("/")
             })
-            .catch((error) => {
-                // handle any network error
-                console.error(error);
-                alert('Something went wrong. Please try again later.');
-            });
-    };
+        }
+    }
 
     return (
-        <div id="create-account-form">
-            <h1>Create Account</h1>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="name">Name</label>
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={name}
-                    onChange={handleNameChange}
-                    required
-                />
-                <label htmlFor="username">Username</label>
+        <form onSubmit={handleSubmit}>
+            <div>
+                <label htmlFor="Username">Username:  </label>
                 <input
                     type="text"
                     id="username"
-                    name="username"
-                    value={username}
-                    onChange={handleUsernameChange}
-                    required
+                    placeholder="Enter Username"
+                    onChange={handleChange}
                 />
-                <label htmlFor="password">Password</label>
+            </div>
+            <div>
+                <label htmlFor="Password">Password:  </label>
                 <input
                     type="password"
                     id="password"
-                    name="password"
-                    value={password}
-                    onChange={handlePasswordChange}
-                    required
+                    placeholder="Enter Password"
+                    onChange={handleChange}
                 />
-                <label htmlFor="email">Email</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={email}
-                    onChange={handleEmailChange}
-                    required
-                />
-                <button type="submit">Create Account</button>
-            </form>
-        </div>
-    );
+            </div>
+            <button type="submit" onClick={handleSubmit}>
+                Login
+            </button>
+        </form>
+    )
 }
-
 export default CreateAccountForm;

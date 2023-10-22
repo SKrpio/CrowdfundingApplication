@@ -20,7 +20,7 @@
     height: 10%;
 }
 
-.create-account-form {
+#create-account-form {
     display: flex;
     flex-direction: column; /* To stack items vertically */
     justify-content: center; /* To center items vertically */

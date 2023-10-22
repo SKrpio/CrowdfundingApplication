@@ -1,6 +1,3 @@
-
-import getProject from '../api/get-projects'  
-
 import { useParams } from "react-router-dom"
 
 import useProject from "../hooks/useproject"
@@ -24,7 +21,7 @@ function ProjectPage() {
         <div>
             <h2>{project.title}</h2>
             <h3>Created at: {project.date_created}</h3>
-            <h3>{`Status: ${project.is_open}`}</h3>
+            <h3>{`Status: ${project.is_open ? "Open" : "Closed" }`}</h3>
             <h3>Pledges:</h3>
             <ul>
                 {project.pledges && Array.isArray(project.pledges) ? (
