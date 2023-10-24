@@ -60,7 +60,7 @@ Image of Wireframe design which details 6 site pages including the landing page,
 'Unica One' for body text.
 
 ## Submission Documentation
-Deployed Project: [Helping Hand](https://fantastic-sunshine-0eaf90.netlify.app/)
+Deployed Project: [Helping Hand](https://helpiing-hand.netlify.app/)
 
 ### How To Run
 Once repository has been cloned and opened on your device, open a terminal.

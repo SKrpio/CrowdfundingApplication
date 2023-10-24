@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom'
 import postPledge from '../api/post-pledge'
+import DropDown from './DropDown';
 
 function CreatePledge(props) {
+
   const navigate = useNavigate()
   const [isLoading, setIsLoading] = useState(false)
   const [pledgeData, setPledgeData] = useState({
@@ -46,6 +48,7 @@ function CreatePledge(props) {
   return (
     <form onSubmit={handleSubmit}>
       <div>
+        <DropDown />
         <label htmlFor="amount">Donation:  </label>
         <input 
           type="text" 
@@ -63,7 +66,7 @@ function CreatePledge(props) {
           onChange={handleChange} 
         />
       </div>
-      <div>
+      <div> 
         <label htmlFor='anonymous'>Remain Anonymous?  </label>
         <input
           type='checkbox'
