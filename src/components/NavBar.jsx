@@ -15,6 +15,7 @@ function NavBar() {
         <div>
             <nav>
                 <ul class="nav-menu"> 
+                
                     <li><Link to="/">Home</Link></li>
                     {auth.token ? (
                         <Link to="/" onClick={handleLogout}>

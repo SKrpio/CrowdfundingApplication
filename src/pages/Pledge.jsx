@@ -2,7 +2,7 @@ import "../pages/CSS/PledgePage.css";
 import CreatePledge from "../components/CreatePledge";
 import leftWing from '../images/leftWing.png';
 import rightWing from '../images/rightWing.png';
-import DropDown from "../components/DropDown";
+
     
     
 function Pledge() {

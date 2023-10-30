@@ -13,3 +13,14 @@
     }
 
 /* // fix the above */
+
+    h3 {
+    color:#000000bd;
+    line-height: 3px;
+    text-align: center;
+    vertical-align: center;   
+}
+
+a:link { 
+    text-decoration: none; 
+}

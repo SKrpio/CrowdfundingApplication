@@ -1,14 +1,27 @@
 @import url("https://fonts.google.com/specimen/Unica+One?category=Display");
+/* @import url("https://fontsgeek.com/fonts/Virgil-GS-Regular");
 
-
+@font-face { font-family: 'Virgil GS' ; src: url('https://fontsgeek.com/fonts/virgil-gs-regular?ref=readme'); } 
+@font-face { font-family: 'Virgil GS'; font-weight: bold; src: url('https://fontsgeek.com/fonts/virgil-gs-regular?ref=readme');}
+   */
 
 html {
-    font-family: 'Unica One';
+    font-family: 'Unica One',  'Virgil GS';
     color: #F5F7F7;
     font-size: 22px;
   }
-  
-  
+   
+
+
+    /* @font-face { font-family: Virgil; src: url('VirgilGSRegular.TTF'); } 
+      h1 {
+         font-family: Virgil
+      }
+  html {
+    font-family: 'Virgil GS';
+    color: #F5F7F7;
+    font-size: 22px;
+  }  */
 
 .nav-menu {
     justify-content: center;
@@ -26,3 +39,6 @@ html {
     text-decoration: none;
     color: #000; /* Set text color */
 }
+
+
+a:hover { text-shadow: 0 0 5px #F5F7F7; }
